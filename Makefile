@@ -13,6 +13,6 @@ local-architecture:
 	-t acnpublic.azurecr.io/arm64-demo:latest \
 	.
 
-
+# Don't do this, build the binary in the Dockerfile
 build-binary:
 	go build -o /usr/local/bin/hello-world src/*.go
